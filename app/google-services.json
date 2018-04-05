@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "686963587494",
+    "firebase_url": "https://truckstationthenwev.firebaseio.com",
+    "project_id": "truckstationthenwev",
+    "storage_bucket": "truckstationthenwev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:686963587494:android:9fbf8046785b2021",
+        "android_client_info": {
+          "package_name": "e.manal.truckstationthenwev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "686963587494-b781qkjehp2islssltmlo6orotoru6f4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "e.manal.truckstationthenwev",
+            "certificate_hash": "1e1ef3f4131990035ec544c2f4755c3c3ca3a863"
+          }
+        },
+        {
+          "client_id": "686963587494-vp7mb85f74j61na4rhkkmrp4mhfqiom3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkZgSodCnXt2vG4RjfpeoxonNgzLrQc9U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "686963587494-vp7mb85f74j61na4rhkkmrp4mhfqiom3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

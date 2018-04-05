@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:icon="@drawable/ic_more_vert_white_24dp"
+    >
+
+    <item
+        android:id="@+id/Logout"
+        android:checkable="false"
+        android:enabled="true"
+        android:title="Logout"
+        android:visible="true">
+
+    </item>
+    <item
+        android:id="@+id/more"
+        android:checkable="false"
+        android:enabled="true"
+        android:title="more"
+        android:visible="true">
+
+    </item>
+</menu>

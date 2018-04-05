@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    android:paddingTop="@dimen/activity_vertical_margin_1"
+    android:paddingBottom="@dimen/activity_vertical_margin_1"
+    android:background="#F5CB5C"
+>
+
+
+    <!-- F5CB5C #FCE196  #ED6B69 FCE196-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="240dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:padding="16dp"
+                android:layout_marginTop="48dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/station" android:contentDescription="@string/todo" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#fff"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_login"
+                android:text="انا مستخدم"
+                android:textColor="#242423"
+                android:textAllCaps="false"
+                android:padding="16dp"
+                android:clickable="true"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_marginTop="24dp"
+                android:focusable="true"
+                android:id="@+id/customer"
+                android:onClick="goToCustomerLogInPage"/>
+
+            <Button
+                android:id="@+id/owner"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/background_signup"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="goToPublicOrPrivat"
+                android:padding="16dp"
+                android:text="انا صاحب عربة طعام"
+                android:textAllCaps="false"
+                android:textColor="#fff" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textAllCaps="false"
+                android:text="انا زائر"
+                android:layout_marginTop="16dp"
+                android:focusable="true"
+                android:gravity="center"
+            android:id="@+id/visitor"
+                android:onClick="goToVisitorHomePage"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

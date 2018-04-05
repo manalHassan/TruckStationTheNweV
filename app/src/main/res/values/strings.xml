@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Truck Station</string>
+    <string name="username">Email</string>
+    <string name="password">.......</string>
+    <string name="todo">TODO</string>
+    <string name="sign_up">Sign up</string>
+    <string name="log_in">تسجيل الدخول</string>
+    <string name="Am_customer">انا مستخدم</string>
+    <string name="Am_owner">انا صاحب عربة طعام</string>
+    <string name="nameoft">اسم العربة</string>
+    <string name="nameofc">نوع المطبخ</string>
+    <string name="fllow">متابعة </string>
+    <string name="unfllow">الغاء متابعة</string>
+
+    <string name="Am_vistor">انا زائر</string>
+    <string name="title_activity_ownerprofile">ownerprofile</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_logut">Logut</string>
+    <string name="title_activity_logout">Logout</string>
+    <string name="profilePublicTab">المعلومات الشخصية</string>
+    <string name="postPublicTab">صور</string>
+    <string name="menuPublicTab">قائمة الطعام</string>
+    <string name="add"></string>
+    <string name="title_activity_private_owner_profile">PrivateOwnerProfileActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="title_activity_reserved_truck_fragment">reservedTruckFragment</string>
+</resources>

@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        tools:context=".editprofile"
+        >
+        <!--  ED6B69  #FCE196 FCE196-->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:orientation="vertical">
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="25dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="25dp">
+
+
+
+                    <EditText
+                        android:id="@+id/name"
+                        android:layout_width="236dp"
+                        android:layout_height="52dp"
+                        android:layout_gravity="end"
+
+                        android:layout_marginTop="40dp"
+                        android:drawablePadding="12dp"
+                        android:ems="10"
+                        android:gravity="top"
+                        android:hint="اسم المستخدم"
+                        android:inputType="textEmailAddress"
+                        android:layoutDirection="rtl"
+                        android:maxLines="1"
+                        android:padding="8dp"
+                        android:textDirection="rtl" />
+
+
+                    <TextView
+                        android:id="@+id/location"
+                        android:layout_width="60dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="45dp"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:onClick="goToVisitorHomePage"
+                        android:text="حدد موقعك"
+                        android:textAllCaps="false"
+                        android:textColor="#000" />
+            </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                     />
+
+                <TextView
+                    android:id="@+id/ppp"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="كلمة المرور"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+
+
+                    android:drawablePadding="12dp"
+
+                    android:ems="10"
+                    android:gravity="right"
+                    android:hint="كلمة المرور"
+                    android:inputType="textPassword"
+                    android:layoutDirection="rtl"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:textDirection="rtl"
+                    android:textStyle="bold"
+                    tools:targetApi="jelly_bean_mr1" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#fff" />
+
+                <TextView
+                    android:id="@+id/fff"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="رقم الجوال"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+
+                    android:drawablePadding="12dp"
+
+                    android:ems="10"
+                    android:hint="رقم الجوال"
+                    android:inputType="number"
+                    android:layoutDirection="rtl"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:textDirection="rtl"
+                    android:textStyle="bold"
+                    tools:targetApi="jelly_bean_mr1" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                   />
+
+                <TextView
+                    android:id="@+id/maili"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="البريد الالكتروني"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+
+
+                    android:drawablePadding="12dp"
+
+                    android:ems="10"
+                    android:hint="البريد الالكتروني"
+                    android:inputType="textEmailAddress"
+                    android:layoutDirection="rtl"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:textDirection="rtl"
+                    android:textStyle="bold"
+                    tools:targetApi="jelly_bean_mr1" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    />
+
+                <TextView
+                    android:id="@+id/ccc"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="نوع المطبخ"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/cusin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+
+
+                    android:drawablePadding="12dp"
+
+                    android:ems="10"
+                    android:hint="نــوع المطبخ"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:textDirection="rtl"
+                    android:textStyle="bold"
+                    tools:targetApi="jelly_bean_mr1" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    />
+
+                <TextView
+                    android:id="@+id/ddd"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="ســــــاعـــــــات العمـــــــــــــــل"
+
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="الاحد"
+                    />
+
+                <EditText
+                    android:id="@+id/etFeedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top"
+                    android:hint="الاحد 7 مساء-2 صباحا"
+                    android:inputType="text"
+                    android:lines="1" />
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="الاثنين"
+                    />
+
+                <EditText
+                    android:id="@+id/mon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top"
+                    android:hint="الاثنين 7 مساء-2 صباحا"
+                    android:inputType="text"
+                    android:lines="1" />
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="الثلاثاء"
+                    />
+                <EditText
+                    android:id="@+id/ths"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top"
+                    android:hint="الثلاثاء 7 مساء-2 صباحا"
+                    android:inputType="text"
+                    android:lines="1" />
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="الاربعاء"
+                    />
+                <EditText
+                    android:id="@+id/wensday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top"
+                    android:hint="الاربعاء 7 مساء-2 صباحا"
+                    android:inputType="text"
+                    android:lines="1" />
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="الخميس"
+                    />
+                <EditText
+                    android:id="@+id/thus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top"
+                    android:hint="الخميس 7 مساء-2 صباحا"
+                    android:inputType="text"
+                    android:lines="1" />
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="الجمعه"
+                    />
+                <EditText
+                    android:id="@+id/fri"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top"
+                    android:hint="الجمعه 7 مساء-2 صباحا"
+                    android:inputType="text"
+                    android:lines="1" />
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="السبت"
+                    />
+                <EditText
+                    android:id="@+id/sat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top"
+                    android:hint="السبت 7 مساء-2 صباحا"
+                    android:inputType="text"
+                    android:lines="1" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="9dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="25dp">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        />
+                    <ImageView
+                        android:id="@+id/location1"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/ic_location_on_black_24dp" />
+
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    />
+
+
+                <Button
+                    android:id="@+id/update"
+                    style="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_width="165dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/buttonstayle"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="chickInfo"
+                    android:padding="16dp"
+                    android:text="حفظ التغييــــرات"
+                    android:textAllCaps="false"
+                    />
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+</android.support.v4.widget.DrawerLayout>

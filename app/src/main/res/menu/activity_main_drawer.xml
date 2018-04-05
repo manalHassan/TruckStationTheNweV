@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_action_name"
+            android:title="تعديل المعلومات الشخصية " />
+        <item
+            android:id="@+id/nav_request"
+            android:icon="@drawable/ic_action_request"
+            android:title="الحجــوزات " />
+        <item
+            android:id="@+id/nav_preorder"
+            android:icon="@drawable/ic_action_preorder"
+            android:title="الطلبات " />
+        <item
+            android:id="@+id/nav_booking"
+            android:icon="@drawable/ic_action_bookingsch"
+            android:title="جدول الحجوزات" />
+
+    </group>
+    <group android:checkableBehavior="single" android:visible="true" android:id="@+id/chatt">
+        <item android:id="@+id/chat"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="التواصل مع العملاء" />
+    </group>
+    <group android:checkableBehavior="single" android:visible="true" android:id="@+id/icon_group">
+        <item android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_action_logout"
+            android:title="تسجيل الخــروج" />
+    </group>
+
+</menu>

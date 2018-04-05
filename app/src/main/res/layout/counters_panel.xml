@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:layoutDirection="rtl"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/commentsCounterContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/intrinsic_padding"
+        android:paddingLeft="@dimen/intrinsic_padding"
+        android:paddingTop="@dimen/intrinsic_padding"
+        >
+
+
+        <ImageView
+            android:id="@+id/commentsCountImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_comments"
+            tools:ignore="VectorDrawableCompat"
+            android:layout_marginRight="8dp"/>
+
+        <TextView
+            android:id="@+id/commentsCountTextView"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/small_intrinsic_padding"
+            android:textAppearance="@style/TextAppearance.Second.Light"
+            android:textDirection="rtl" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dateContainer"
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/intrinsic_padding"
+        android:paddingLeft="@dimen/intrinsic_padding"
+        android:paddingTop="@dimen/intrinsic_padding"
+        >
+
+
+        <ImageView
+            android:id="@+id/dateImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_time"
+            tools:ignore="VectorDrawableCompat"
+            android:layout_marginRight="8dp"/>
+
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/small_intrinsic_padding"
+            android:textAppearance="@style/TextAppearance.Second.Light"
+            android:textDirection="rtl" />
+    </LinearLayout>
+
+</LinearLayout>

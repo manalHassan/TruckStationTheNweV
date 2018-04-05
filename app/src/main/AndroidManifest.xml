@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="e.manal.truckstationthenwev">
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Truck Station"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    <activity
+        android:name=".CustomerLogInPage"
+        android:label="تسجيل الدخول المستخدم" />
+    <activity
+        android:name=".PublicOwnerRegistration"
+        android:label="تسجيل الدخول صاحب عربه" />
+    <activity
+        android:name=".privateOwnerLogIn"
+        android:label="انشاء حساب صاحب عربه" />
+    <activity
+        android:name=".publicOnerLogIn"
+        android:label="تسجيل الدخول صاحب عربه" />
+    <activity
+        android:name=".PublicOrPrivat"
+        android:label="TruckStation" />
+    <activity
+        android:name=".GoTOPrivatRegisterPage"
+        android:label="انشاء حساب صاحب عربه" />
+    <activity
+        android:name=".ListPrivate"
+        android:label="عربات الطعام الخاصة"
+
+        />
+    <activity
+        android:name=".PravitListVistor"
+        android:label="عربات الطعام الخاصة"
+
+        />
+    <activity
+        android:name=".ListPuplic"
+        android:label="عربات الطعام العامة"
+
+        />
+    <activity
+        android:name=".publicListVistor"
+        android:label="عربات الطعام العامة"
+
+        />
+    <activity
+        android:name=".GoTOCustomerRegisterPage"
+        android:label="انشاء حساب مستخدم" />
+    <activity
+        android:name=".resetpassword"
+        android:label="اعاده تعيين كلمه المرور" />
+    <activity
+        android:name=".VisitorHomePage"
+        android:label="عربات الطعام ع الخريطه" />
+    <activity
+        android:name=".VsitorAllTrucks"
+        android:label="عربات الطعام ع الخريطه" />
+    <activity
+        android:name=".customer_profilenew"
+        android:label="الملف الشخصي" />
+    <activity
+        android:name=".Rating"
+        android:label="تقييم العربه"
+        android:noHistory="true" />
+    <activity
+        android:name=".NearByTrucks"
+        android:label="العربات القريبه مني" />
+    <activity
+        android:name=".NearByTrucksVisitors"
+        android:label="العربات القريبه مني" />
+    <activity
+        android:name=".Chart"
+        android:label="مستخدمي التطبيق" />
+    <activity
+        android:name=".ChartVisitor"
+        android:label="مستخدمي التطبيق" />
+    <activity
+        android:name=".editprofile"
+        android:label="اعاده تعيين معلوماتي" />
+    <activity android:name=".contentmain" />
+    <activity
+        android:name=".ownermenu"
+        android:label="قائمه الطعام" />
+    <activity android:name=".itemlist" />
+    <activity
+        android:name=".edititem"
+        android:label="تعديل الصنف" />
+    <activity android:name=".Logout1" />
+    <activity android:name=".testMap" />
+    <activity android:name=".MyMain" />
+    <activity
+        android:name=".publictruckownerprofile"
+        android:label="صفحتي الشخصيه" />
+    <activity android:name=".Homepage" />
+    <activity android:name=".bookingschulde" />
+    <activity android:name=".postActivityPublic" />
+    <activity android:name=".ReserveTruck" />
+    <activity android:name=".PublicOwnerProfileActivity" />
+    <activity android:name=".tab3_itemlist" />
+    <activity android:name=".tab3_itemlistforcustomer" />
+    <activity android:name=".Publicownerforcustmer" />
+    <activity android:name=".bookingrequest" />
+    <activity android:name=".chatting" />
+    <activity android:name=".ownerchatlist" />
+    <activity android:name=".viewCart" />
+    <activity android:name=".SinglePostCustomer" />
+    <activity android:name=".Main2Activity" />
+
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="AIzaSyC_PwVA-gJQ24JZbhZYJINoK9XLC3KdGrg" />
+
+    <activity
+        android:name=".PrivateOwnerProfileActivity"
+        android:label="@string/title_activity_private_owner_profile"
+        android:theme="@style/AppTheme" />
+    <activity android:name=".postActivityPrivate" />
+    <activity android:name=".SinglePostView" />
+    <activity
+        android:name=".reservedTruckActivity"
+        android:label="@string/title_activity_reserved_truck_fragment"
+        android:theme="@style/AppTheme" />
+
+    </application>
+</manifest>

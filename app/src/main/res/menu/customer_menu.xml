@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_publiclist"
+            android:icon="@drawable/ic_action_menu"
+            android:title="عربات الطعام العامة" />
+        <item
+            android:id="@+id/nav_privatelist"
+            android:icon="@drawable/ic_action_menu"
+            android:title="عربات الطعام الخاصة" />
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ic_map_black_24dp"
+            android:title="العربات العامة على الخريطة" />
+        <item
+            android:id="@+id/nav_nearmap"
+            android:icon="@drawable/ic_map_black_24dp"
+            android:title="العربات القريبة على الخريطة" />
+        <item
+            android:id="@+id/nav_pre_request"
+            android:icon="@drawable/ic_action_request"
+            android:title="الحجــوزات السابقة" />
+        <item
+            android:id="@+id/nav_pre_preorder"
+            android:icon="@drawable/ic_record_voice_over_black_24dp"
+            android:title="الطلبات السابقة" />
+        <item
+            android:id="@+id/cart"
+            android:icon="@drawable/ic_record_voice_over_black_24dp"
+            android:title="السلة" />
+
+    </group>
+    <group android:checkableBehavior="single" android:visible="true" android:id="@+id/icon_group">
+        <item
+            android:id="@+id/nav_app"
+            android:icon="@drawable/ic_assessment_black_24dp"
+            android:title="حول التطبيق" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_action_name"
+            android:title="تعديل المعلومات الشخصية" />
+        <item android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_action_logout"
+            android:title="تسجيل الخــروج" />
+    </group>
+
+</menu>
