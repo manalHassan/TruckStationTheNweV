@@ -116,7 +116,6 @@ public  void chickInfo(View view ){
 
     if ( !TextUtils.isEmpty(emailc) && !TextUtils.isEmpty(pass) && !TextUtils.isEmpty(phoneN)&& !TextUtils.isEmpty(fname) && !TextUtils.isEmpty(lname) ) {
         if (pass.matches("^(?=.*\\d)(?=.*[$@$!%*#?&])[A-Za-z\\d$@$!%*#?&]{8,10}$")) {
-            if ( (!fname.matches("[$@$!%*#?&1-9]*"))&&( !lname.matches("[$@$!%*#?&1-9 ]*"))){
             mProgress.setMessage("انتظر من فضلك....");
             mProgress.show();
 
@@ -153,10 +152,8 @@ public  void chickInfo(View view ){
                         }
                     });
 
-        }
-    else {
-            Toast.makeText(GoTOCustomerRegisterPage.this, "يجب ان لا يحتوي الاسم الاول والاخير ع ارقام او حروف خاصة", Toast.LENGTH_SHORT).show();
-        }}
+
+  }
 
     else
         {      Toast.makeText(GoTOCustomerRegisterPage.this, "الرقم السري يجب ان يحتوي على رقم واحد على الاقل و حرف خاص واحد على الاقل وطوله ثمانية حروف ", Toast.LENGTH_SHORT).show();

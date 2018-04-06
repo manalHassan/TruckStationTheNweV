@@ -70,7 +70,7 @@ public class tab3_itemlistforcustomer extends AppCompatActivity implements Navig
                 //car = new cart ();
                 String cid = cartRef.push().getKey();
                 cartItem cartitem = new cartItem(artist.getIName() , artist.getIPrice() , b.getString("id") , cid);
-                    cartRef.child(firebaseAuth.getUid()).child(cid).setValue(cartitem);
+                    cartRef.child(firebaseAuth.getCurrentUser().getUid()).child(cid).setValue(cartitem);
                 //    String s =  artist.getIName();
               //  }
               //  else {

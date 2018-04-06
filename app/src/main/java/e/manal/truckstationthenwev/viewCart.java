@@ -145,7 +145,7 @@ public class viewCart extends AppCompatActivity implements NavigationView.OnNavi
 
 
         //getting the specified artist reference
-        DatabaseReference dR = FirebaseDatabase.getInstance().getReference("Cart").child(firebaseAuth.getUid()).child(cid);
+        DatabaseReference dR = FirebaseDatabase.getInstance().getReference("Cart").child(firebaseAuth.getCurrentUser().getUid()).child(cid);
 
         //removing artist
         dR.removeValue();
@@ -167,7 +167,7 @@ public class viewCart extends AppCompatActivity implements NavigationView.OnNavi
         // String id = user.getUid();//customer id is the same as rating id to make it easy to refer
         FirebaseUser user=FirebaseAuth.getInstance().getCurrentUser();
         String id = user.getUid();
-        myRef.child("Cart").child(firebaseAuth.getUid()).addValueEventListener(new ValueEventListener() {
+        myRef.child("Cart").child(firebaseAuth.getCurrentUser().getUid()).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 //   mid = dataSnapshot.child("Cart").getValue(String.class);
@@ -220,9 +220,9 @@ public class viewCart extends AppCompatActivity implements NavigationView.OnNavi
         for (int i =0 ; i<artists.size() ; i ++){
             cartItem item = artists.get(i);
             String itemId = myRef2.push().getKey();
-            myRef2.child(""+firebaseAuth.getUid()).child(item.getFid()).child(itemId).setValue(item.getCatItem());
+            myRef2.child(""+firebaseAuth.getCurrentUser().getUid()).child(item.getFid()).child(itemId).setValue(item.getCatItem());
             Toast.makeText(viewCart.this, "تم ارسال طلبك:)",Toast.LENGTH_SHORT).show();
-            myRef.child("Cart").child(firebaseAuth.getUid()).removeValue();
+            myRef.child("Cart").child(firebaseAuth.getCurrentUser().getUid()).removeValue();
         }
     }
     @Override

@@ -142,7 +142,6 @@
                     android:layout_marginTop="16dp"
                     android:focusable="true"
                     android:gravity="center"
-                    android:onClick="goToVisitorHomePage"
                     android:text="حدد موقعك"
                     android:textAllCaps="false"
                     android:textColor="#000" />
